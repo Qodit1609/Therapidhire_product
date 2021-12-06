@@ -1,0 +1,34 @@
+#header .navbar .navbar-brand img{
+    height: 2.5rem;
+}
+#header {
+    background-color: whitesmoke;
+}
+
+#header .navbar .nav-link{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(0 0 0 / 82%);
+}
+
+#header .navbar .nav-link .btn{
+    background-color: transparent;
+    border: 1.5px solid #c992e0;
+    font-weight: 600;
+    margin-top: -5px;
+    box-shadow: 0 0 0 0.05rem #c992e0;
+    font-size: 15px;
+}
+
+#header .navbar .nav-link .btn:hover{
+    background-color: #c992e0;
+    color: #fff;
+}
+#header .navbar .nav-link .btn:focus{
+    box-shadow: 0 0 0 0.12rem #c992e0;
+    /* background-color: #c992e0; */
+}
+#header .navbar-light .navbar-brand {
+    color: rgb(0 0 0);
+}
+

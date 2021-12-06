@@ -1,0 +1,71 @@
+#homepage {
+    padding-top: 7rem;
+}
+#homepage .left-container img{
+    height: 100%;
+}
+
+#homepage .left-container .content{
+    padding: 70px 10px 10px 70px;
+}
+
+#homepage .form-container {
+    padding: 20px;
+}
+#homepage .form-container ul{
+    border: none;
+}
+
+#homepage .nav-tabs .nav-link{
+    color: black;
+    background-color: transparent;
+    border: 2px solid #c992e0;
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+#homepage .nav-tabs .nav-item{
+    padding-left: 55px;
+}
+
+#homepage .nav-link.active {
+    color: #fff;
+    background-color: #c992e0;
+    border-color: 2px solid #c992e0;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+    #homepage .left-container .content{
+        padding: 10px;
+    }
+    #homepage .form-container {
+        padding: 5px;
+    }
+    #homepage .nav-tabs .nav-link{
+        border-radius: 0.5rem;
+    }
+    #homepage .nav-tabs .nav-item{
+        padding-left: 10px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+    #homepage .nav-tabs .nav-link{
+        width: 6rem;
+        font-size: 9px;
+    }
+    #homepage .nav-tabs .nav-item{
+        padding-left: 10px;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+    #homepage .nav-tabs .nav-link{
+        width: 5rem;
+        font-size: 9px;
+    }
+    #homepage .nav-tabs .nav-item{
+        padding-left: 25px;
+    }
+    #homepage .form-container {
+        padding: 40px 20px 20px 20px;
+    }
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import carousel1 from "../../Assets/carousel1.png";
-import "./Customers.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -11,9 +10,10 @@ const options = {
 function Customers() {
   return (
     <div id="customers">
-      <div className="container text-center">
+      <div className="container">
+       <div className="customer-container">
         <h1>Our Customers</h1>
-        <OwlCarousel className="owl-theme" loop margin={10} nav>
+        <OwlCarousel className="owl-theme" loop margin={1} nav>
           <div class="item">
             <img src={carousel1} />
           </div>
@@ -30,6 +30,7 @@ function Customers() {
             <img src={carousel1} />
           </div>
         </OwlCarousel>
+        </div>
       </div>
     </div>
   );

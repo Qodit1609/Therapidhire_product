@@ -1,12 +1,10 @@
 import React from "react";
 import Login from "../Login/Login";
-import "./Homepage.css";
 import leftImage from "../../Assets/18940.png";
 import Services from "../Services/Services";
-import WhyUS from "../WhyUS/WhyUS";
 import Customers from "../Customers/Customers";
-import Testimonials from "../Testimonials/Testimonials";
-
+// import WhyUS from "../WhyUS/WhyUS";
+// import Testimonials from "../Testimonials/Testimonials";
 
 function Homepage() {
   return (
@@ -14,10 +12,10 @@ function Homepage() {
       <div className="container">
         <div className="row">
           <div className="col-md-6 left-container">
-                <img className="img-fluid" src={leftImage} alt="leftImage" />
+            <img className="img-fluid" src={leftImage} alt="leftImage" />
           </div>
           <div className="col-md-6 form-container">
-             <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
@@ -43,7 +41,7 @@ function Homepage() {
                   aria-controls="profile"
                   aria-selected="false"
                 >
-                  INTERVIWER
+                 INTERVIEWER 
                 </button>
               </li>
               <li class="nav-item" role="presentation">
@@ -61,7 +59,7 @@ function Homepage() {
                 </button>
               </li>
             </ul>
-           <div class="tab-content" id="myTabContent">
+            <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
                 id="home"
@@ -90,10 +88,10 @@ function Homepage() {
           </div>
         </div>
       </div>
-      <Services/>
-      <WhyUS/>
-      <Customers/>
-      <Testimonials/>
+      <Services />
+      <Customers />
+      {/* <WhyUS/>
+      <Testimonials/> */}
     </div>
   );
 }

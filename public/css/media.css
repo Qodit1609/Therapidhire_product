@@ -1,0 +1,132 @@
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  #homepage .left-container .content {
+    padding: 10px;
+  }
+  #homepage .form-container {
+    padding: 5px;
+  }
+
+  #homepage .nav-tabs .nav-link {
+    border-radius: 0.5rem;
+  }
+  #homepage .nav-tabs .nav-item {
+    padding-left: 10px;
+  }
+  #login .input-group {
+    width: 90%;
+  }
+  #login form {
+    padding: 20px 10px 20px 40px;
+  }
+  #login .btn .form-control {
+    width: 90%;
+  }
+  #login .heading {
+    padding-bottom: 10px !important;
+  }
+  #services .cards .card .card-img-top {
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+  }
+  #services .cards {
+    padding: 50px 25px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  #homepage .nav-tabs .nav-link {
+    width: 6rem;
+    font-size: 9px;
+  }
+  #homepage .nav-tabs .nav-item {
+    padding-left: 10px;
+  }
+  #login .input-group {
+    width: 90%;
+  }
+  #login form {
+    padding: 20px 10px 20px 40px;
+  }
+  #login .btn .form-control {
+    width: 40%;
+  }
+  #login .heading {
+    padding-bottom: 10px !important;
+  }
+  #services .cards .card .card-img-top {
+    padding: 10px 100px 10px 117px;
+    width: 100%;
+  }
+  #services {
+    padding-top: 10px;
+  }
+  #services .cards {
+    padding: 30px 30px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  #homepage .nav-tabs .nav-link {
+    width: 5rem;
+    font-size: 9px;
+  }
+  #homepage .form-container {
+    padding: 40px 20px 20px 20px;
+  }
+  #login form {
+    padding: 20px 10px 20px 40px;
+  }
+  #login .btn {
+    width: 90%;
+  }
+  #login .input-group {
+    width: 90%;
+  }
+  #login .heading {
+    padding-bottom: 10px !important;
+  }
+  #services {
+    padding-top: 20px;
+  }
+  #services .cards .card .card-img-top {
+    padding: 10px 100px 10px 100px;
+    width: 100%;
+  }
+  #services .cards {
+    padding: 30px 30px;
+  }
+
+  #customers .customer-container {
+    padding: 20px 30px;
+    height: 220px;
+  }
+  #customers .customer-container:before {
+    left: 100px;
+  }
+  .profile-img .file {
+    margin-right: 114px !important;
+    margin-top: 44px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #login form {
+    padding: 20px 10px 20px 10px;
+  }
+  #login .heading {
+    padding-bottom: 10px !important;
+  }
+  #services {
+    padding: 0px;
+  }
+  #customers .customer-container {
+    padding: 20px 30px;
+    height: 220px;
+  }
+  #customers .customer-container:before {
+    left: 100px;
+  }
+  .profile-img .file {
+    margin-right: 94px !important;
+    margin-top: 33px !important;
+    width: 24% !important;
+}
+}

@@ -7,9 +7,9 @@ function Header() {
     <div id="header">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow p-1  bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <Link class="navbar-brand" to="/">
             <img src={Logo} alt="logo" />
-          </a>  
+          </Link>  
           <button
             class="navbar-toggler"
             type="button"
@@ -33,16 +33,7 @@ function Header() {
                   Features
                 </NavLink>
               </li>
-              <li class="nav-item p-3">
-                <NavLink exact activeClassName="active" to="#">
-                  Pricing
-                </NavLink>
-              </li>
-              <li class="nav-item p-3">
-                <NavLink exact activeClassName="active" to="#">
-                  Blog
-                </NavLink>
-              </li>
+
               <li class="nav-item p-3">
                 <NavLink exact activeClassName="active" to="#">
                   Contact

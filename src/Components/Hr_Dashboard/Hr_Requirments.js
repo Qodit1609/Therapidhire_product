@@ -4,7 +4,6 @@ import Header from "../Header/Header";
 const Hr_Requirments = () => {
   return (
     <div id="hr_req">
-      <Header />
       <div class="form-bg">
         <div class="container">
           <div class="row">

@@ -1,10 +1,8 @@
 import React from "react";
-import Header from "../Header/Header";
 
-const Hr_Profile = () => {
+const Candidate_Profile = () => {
   return (
-    <div id="interviewer_report">
-        <Header/>
+    <div id="candidate_profile">
       <div class="form-bg">
         <div class="container">
           <div class="row">
@@ -24,12 +22,12 @@ const Hr_Profile = () => {
                   </div>
                 </div>
                 <div class="form-group col-md-12">
-                  <label>Candidate Name</label>
+                  <label>First Name</label>
                   <input
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter Candidate Name"
+                    placeholder="Enter First Name"
                   />
                 </div>
                 <div class="form-group col-md-12">
@@ -77,9 +75,46 @@ const Hr_Profile = () => {
                     <option>Other</option>
                   </select>
                 </div>
+                <div class="form-group col-md-12">
+                  <label>Parents Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    required=""
+                    placeholder="Enter First Name"
+                  />
+                </div>
+                <div class="form-group col-md-12">
+                  <label>Parents Mobile Number</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    required=""
+                    placeholder="Enter First Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="upload_file" class="form-label">
+                    Upload File
+                  </label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="upload_file"
+                    multiple
+                  />
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="marital">Marital Status</label>
+                  <select class="form-control" id="marital">
+                    <option>select</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
                 <div className="next-button">
                   <button type="submit" class="btn btn-default">
-                    Submit
+                    Next
                   </button>
                 </div>
               </form>
@@ -91,4 +126,4 @@ const Hr_Profile = () => {
   );
 };
 
-export default Hr_Profile;
+export default Candidate_Profile;

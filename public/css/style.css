@@ -1,9 +1,19 @@
+:root {
+  --main-bg-color: #c992e0;
+}
 a {
   text-decoration: none !important;
 }
 
-:root {
-  --main-bg-color: #c992e0;
+.btn-primary,
+.btn-primary:hover {
+  background: var(--main-bg-color);
+  border-color: var(--main-bg-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--main-bg-color);
+  border-color: var(--main-bg-color);
 }
 
 body {
@@ -78,8 +88,67 @@ body {
   border-color: 2px solid var(--main-bg-color);
 }
 
+/*------------------------------------------- login page------------------------------------------*/
 
-/*------------------------------------------- login page -------------------------------------------*/
+#signup {
+  padding: 50px 0px;
+}
+
+#signup .sign-img {
+  padding-top: 100px;
+}
+
+#log {
+  background: url("../assets/login.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  padding: 90px 0px;
+}
+
+#log .registration-form h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--main-bg-color);
+}
+
+#log .registration-form form {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 70px;
+  border-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+#log .input-group input {
+  width: 100%;
+  border-radius: 0px;
+  background: #ccc !important;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+#log .form-group button {
+  width: 100%;
+  margin: 20px 0px;
+  background: var(--main-bg-color);
+  text-align: center;
+  font-weight: 500;
+  color: #fff !important;
+}
+
+#log .sign-up {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#log .sign-up a {
+  color: var(--main-bg-color);
+}
 
 #login form {
   padding: 10px 0px 40px 30px;
@@ -133,12 +202,13 @@ body {
   width: 10%;
 }
 
-#login .heading {
+#login,
+#signup .heading {
   color: var(--main-bg-color);
   font-weight: bold;
-  margin-left: 20px;
-  text-align: center;
-  padding-bottom: 120px;
+  /* margin-left: 20px; */
+  text-align: center !important;
+  padding-bottom: 40px;
 }
 
 #login .heading img {
@@ -156,32 +226,31 @@ body {
   width: 100% !important;
   color: #fff;
 }
-#login .or-container {
+.or-container {
   align-items: center;
-  color: #ccc;
+  color: #000;
   display: flex;
   margin: 25px 0;
 }
 
-#login .line-separator {
-  background-color: #ccc;
+.line-separator {
+  background-color: #000;
   flex-grow: 5;
   height: 1px;
 }
-#login .btn-google {
+.btn-google {
   color: #545454;
   background-color: #ffffff;
   box-shadow: 0 1px 2px 1px #ddd;
 }
 
-#login .google .btn {
+.google .btn {
   background-color: #fff;
   width: 100% !important;
   border: 2px solid #fff !important;
   color: #333;
 }
-
-#login .or-label {
+.or-label {
   flex-grow: 1;
   margin: 0 15px;
   text-align: center;
@@ -230,8 +299,8 @@ body {
 }
 #services .cards .card-body p {
   font-size: 15px;
+  color: #000;
 }
-
 
 /* ------------------------------------------- our customer---------------------------------------*/
 #customers {
@@ -291,7 +360,6 @@ body {
   display: none;
 }
 
-
 /* ----------------------------- footer ----------------------------------------- */
 
 #footer {
@@ -306,7 +374,8 @@ body {
   color: rgb(22, 66, 212);
 }
 
-#footer .foot-head  h6,p{
+#footer .foot-head h6,
+p {
   color: #fff;
 }
 
@@ -320,27 +389,95 @@ body {
   padding-top: 100px;
 }
 
-#hr_dash .hr-table{
+#hr_dash .hr-table {
   padding-top: 50px;
 }
 
-#hr_dash .hr-table .fa-check-circle{
-  color: #13C39C;
+#hr_dash .hr-table .fa-check-circle {
+  color: #13c39c;
 }
 
-#hr_dash .hr-table .fa-times-circle{
-  color:#FB4B4B;
+#hr_dash .short-candidate {
+  margin-left: 10px;
 }
-#hr_dash .fa.fa-star{
+#hr_dash .short-candidate p {
+  color: #000;
+}
+
+#hr_dash .table-bg {
+  background: var(--main-bg-color);
+}
+
+#hr_dash .candidate-button {
+  float: right;
+  padding-top: 10px;
+}
+
+#hr_dash .table-bg tr th {
+  color: #fff;
+}
+
+#hr_dash .selected-sec {
+  padding-top: 50px;
+  background: #fafafa;
+}
+
+#hr_dash .recject-candi p {
+  color: #ccc;
+}
+
+#hr_dash .comment-box h3 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#hr_dash .comment-box .form-group textarea {
+  border-color: var(--main-bg-color) !important;
+}
+#hr_dash .comment-box button {
+  margin-top: 40px;
+  background: var(--main-bg-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+#hr_dash .hr-table .fa-times-circle {
+  color: #fb4b4b;
+}
+#hr_dash .fa.fa-star {
   color: rgb(231, 224, 4) !important;
 }
 
-
 /*------------------------------- Hr Profile---------------------------------------------  */
 
-#hr_profile,#interviewer_profile,#company_profile,#hr_req {
+#hr_profile,
+#interviewer_profile,
+#company_profile,
+#hr_req,
+#hr_company,
+#candidate_salary,
+#candidate_profile ,
+#interviewer_candidate,
+#verification{
   padding: 50px 0px;
-  background: #EDDDD4;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover  !important;
+  width: 100%;
+  min-height: 100%;
+}
+
+#hr_req {
+  background: url("../assets/hrrequirement.jpg") no-repeat center center fixed;
+}
+
+#hr_company {
+  background: url("../assets/hrcompany.jpg") no-repeat center center fixed;
+}
+
+#hr_profile {
+  background: url("../assets/hrprofile.jpg") no-repeat center center fixed;
 }
 
 .demo {
@@ -392,16 +529,14 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.form-horizontal textarea{
-    color: #555;
-    font-size: 16px;
-    height: 100px !important;
-    padding: 0px !important;
-    border-radius: 12px;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-
+.form-horizontal textarea {
+  color: #555;
+  font-size: 16px;
+  height: 100px !important;
+  padding: 0px !important;
+  border-radius: 12px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
-
 
 .form-control::placeholder {
   color: rgba(0, 0, 0, 0.2);
@@ -433,10 +568,6 @@ body {
 .form-horizontal .next-button {
   float: right;
 }
-
-/* .form-horizontal .btn:hover {
-  box-shadow: 5px 10px #888888;
-} */
 
 .profile-img {
   text-align: center;
@@ -479,4 +610,41 @@ body {
 .form-horizontal .forgot:hover {
   color: var(--main-bg-color);
   text-decoration: none;
+}
+
+/* ---------------------------------------- interviewer ------------------------------------- */
+#interviewer_profile {
+  background: url("../assets/interviewerprofile.jpg") no-repeat center center
+    fixed;
+}
+
+#interviewer_candidate{
+  background: url("../assets/interviewercandidate.jpg") no-repeat center center
+  fixed;
+}
+
+/* ------------------------------------- candidate--------- --------------------------------- */
+
+#candidate_salary {
+  background: url("../assets/candidatesalary.jpg") no-repeat center center fixed;
+}
+
+#candidate_acedemic {
+  background: url("../assets/candidate_acedemic.jpg") no-repeat center center
+    fixed;
+}
+
+#candidate_profile {
+  background: url("../assets/candidate_profile.jpg") no-repeat center center
+  fixed;
+}
+
+/* --------------------------------------- verification -------------------------------------- */
+
+#verification{
+  background: url("../assets/verification.jpg") no-repeat center center
+  fixed;
+}
+#verification button{
+  width: 100% !important;
 }

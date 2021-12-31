@@ -1,10 +1,8 @@
 import React from "react";
-import Header from "../Header/Header";
 
-const Hr_Profile = () => {
+const Hr_Company = () => {
   return (
-    <div id="interviewer_report">
-        <Header/>
+    <div id="hr_company">
       <div class="form-bg">
         <div class="container">
           <div class="row">
@@ -24,62 +22,46 @@ const Hr_Profile = () => {
                   </div>
                 </div>
                 <div class="form-group col-md-12">
-                  <label>Candidate Name</label>
+                  <label>Company name</label>
                   <input
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter Candidate Name"
+                    placeholder="Enter Company name"
                   />
                 </div>
                 <div class="form-group col-md-12">
-                  <label>Last Name</label>
+                  <label> Company Location</label>
                   <input
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter Last Name"
+                    placeholder="Enter Company Location"
                   />
                 </div>
                 <div class="form-group col-md-12">
-                  <label>Email Address</label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required=""
-                    placeholder="Enter Email Address"
-                  />
-                </div>
-                <div class="form-group col-md-12">
-                  <label>Date of Birth</label>
-                  <input
-                    class="form-control"
-                    type="date"
-                    required=""
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="form-group col-md-12">
-                  <label>Contact Number</label>
+                  <label>Company Website</label>
                   <input
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter Mobile Name"
+                    placeholder="Enter Company Website"
                   />
                 </div>
-                <div class="form-group col-md-12">
-                  <label for="gender">Gender</label>
-                  <select class="form-control" id="gender">
-                    <option>select</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                  </select>
+                <div class="mb-3">
+                  <label for="verification" class="form-label">
+                  Company Supporting Letter(for verification)
+                  </label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="verification"
+                    multiple
+                  />
                 </div>
                 <div className="next-button">
                   <button type="submit" class="btn btn-default">
-                    Submit
+                    Next
                   </button>
                 </div>
               </form>
@@ -91,4 +73,4 @@ const Hr_Profile = () => {
   );
 };
 
-export default Hr_Profile;
+export default Hr_Company;

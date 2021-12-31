@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 const Hr_Profile = () => {
   return (
     <div id="interviewer_profile">
-        <Header/>
+        {/* <Header/> */}
       <div class="form-bg">
         <div class="container">
           <div class="row">
@@ -65,7 +65,7 @@ const Hr_Profile = () => {
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter Mobile Name"
+                    placeholder="Enter Mobile Number"
                   />
                 </div>
                 <div class="form-group col-md-12">

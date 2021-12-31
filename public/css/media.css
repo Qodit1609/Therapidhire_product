@@ -83,6 +83,9 @@
   #login .heading {
     padding-bottom: 10px !important;
   }
+  #signup .sign-img{
+    padding-top: 40px;
+}
   #services {
     padding-top: 20px;
   }

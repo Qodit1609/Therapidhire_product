@@ -5,7 +5,6 @@ import Header from "../Header/Header";
 const Hr_Profile = () => {
   return (
     <div id="hr_profile">
-      <Header/>
       <div class="form-bg">
         <div class="container">
           <div class="row">
@@ -66,7 +65,7 @@ const Hr_Profile = () => {
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter Mobile Name"
+                    placeholder="Enter Mobile Number"
                   />
                 </div>
                 <div class="form-group col-md-12">
@@ -79,41 +78,22 @@ const Hr_Profile = () => {
                   </select>
                 </div>
                 <div class="form-group col-md-12">
-                  <label>Parents Name</label>
+                  <label>Address</label>
                   <input
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter First Name"
+                    placeholder="Enter Email Address"
                   />
                 </div>
                 <div class="form-group col-md-12">
-                  <label>Parents Mobile Number</label>
+                  <label>Pin_code/Zip_code</label>
                   <input
                     class="form-control"
                     type="text"
                     required=""
-                    placeholder="Enter First Name"
+                    placeholder="Enter Email Address"
                   />
-                </div>
-                <div class="mb-3">
-                  <label for="upload_file" class="form-label">
-                    Upload File
-                  </label>
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="upload_file"
-                    multiple
-                  />
-                </div>
-                <div class="form-group col-md-12">
-                  <label for="marital">Marital Status</label>
-                  <select class="form-control" id="marital">
-                    <option>select</option>
-                    <option>Yes</option>
-                    <option>No</option>
-                  </select>
                 </div>
                 <div className="next-button">
                   <button type="submit" class="btn btn-default">

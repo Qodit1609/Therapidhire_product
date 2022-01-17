@@ -1,10 +1,11 @@
 import React from "react";
+import Admin_Header from "../Header/Admin_Header";
 import Header from "../Header/Header";
 
 const Hr_Profile = () => {
   return (
     <div id="interviewer_profile">
-        {/* <Header/> */}
+      <Header/>
       <div class="form-bg">
         <div class="container">
           <div class="row">
@@ -16,6 +17,9 @@ const Hr_Profile = () => {
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
                       alt=""
+                      class="avatar img-fluid rounded-circle me-1"
+                      width={40}
+                      height={30}
                     />
                     <div class="file btn btn-lg btn-primary">
                       Upload

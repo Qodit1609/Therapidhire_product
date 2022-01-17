@@ -3,6 +3,12 @@
 }
 a {
   text-decoration: none !important;
+  color: var(--main-bg-color) !important;
+}
+
+li,
+ul {
+  list-style: none;
 }
 
 .btn-primary,
@@ -16,11 +22,14 @@ a {
   border-color: var(--main-bg-color);
 }
 
+html,
 body {
+  height: 100%;
 }
 
 /* ---------------------------------------------- header css ------------------------------------- */
-#header .navbar .navbar-brand img {
+#header .navbar .navbar-brand img,
+#admin_header .navbar .navbar-brand img {
   height: 2.5rem;
 }
 #header {
@@ -52,6 +61,10 @@ body {
 }
 #header .navbar-light .navbar-brand {
   color: rgb(0 0 0);
+}
+
+#admin_header .nav-item.dropdown {
+  float: right !important;
 }
 
 /* -------------------------- homepage css ------------------------------------------- */
@@ -94,12 +107,12 @@ body {
   padding: 50px 0px;
 }
 
-#signup .sign-img {
+#login .sign-img {
   padding-top: 100px;
 }
 
 #log {
-  background: url("../assets/login.jpg") no-repeat center center fixed;
+  background: url("../assets/login.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -224,7 +237,7 @@ body {
   background-color: var(--main-bg-color);
   border: 2px solid var(--main-bg-color);
   width: 100% !important;
-  color: #fff;
+  color: #fff !important;
 }
 .or-container {
   align-items: center;
@@ -385,7 +398,9 @@ p {
 
 /* -------------------------------Hr dashboard ------------------------------------------- */
 
-#hr_dash {
+#hr_dash,
+#interview_dash,
+#candidate_dash {
   padding-top: 100px;
 }
 
@@ -400,11 +415,16 @@ p {
 #hr_dash .short-candidate {
   margin-left: 10px;
 }
+
+#hr_dash .short-candidate h5 {
+  font-weight: 700;
+}
 #hr_dash .short-candidate p {
-  color: #000;
+  color: #ccc;
 }
 
-#hr_dash .table-bg {
+#hr_dash .table-bg,
+#interview_dash .table-bg {
   background: var(--main-bg-color);
 }
 
@@ -456,28 +476,29 @@ p {
 #hr_req,
 #hr_company,
 #candidate_salary,
-#candidate_profile ,
+#candidate_profile,
 #interviewer_candidate,
-#verification{
-  padding: 50px 0px;
+#verification {
+  /* padding: 50px 0px; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover  !important;
+  background-size: cover !important;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
+  overflow:hidden;
 }
 
 #hr_req {
-  background: url("../assets/hrrequirement.jpg") no-repeat center center fixed;
+  background: url("../assets/hrrequirement.jpg") no-repeat center center;
 }
 
 #hr_company {
-  background: url("../assets/hrcompany.jpg") no-repeat center center fixed;
+  background: url("../assets/hrcompany.jpg") no-repeat center center;
 }
 
 #hr_profile {
-  background: url("../assets/hrprofile.jpg") no-repeat center center fixed;
+  background: url("../assets/hrprofile.jpg") no-repeat center center;
 }
 
 .demo {
@@ -611,40 +632,135 @@ p {
   color: var(--main-bg-color);
   text-decoration: none;
 }
+.form-control:focus,
+.form-select:focus,
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem var(--main-bg-color) 25%;
+  border-color: var(--main-bg-color);
+  outline: 0;
+}
 
 /* ---------------------------------------- interviewer ------------------------------------- */
 #interviewer_profile {
-  background: url("../assets/interviewerprofile.jpg") no-repeat center center
-    fixed;
+  background: url("../assets/interviewerprofile.jpg") no-repeat center center;
 }
 
-#interviewer_candidate{
-  background: url("../assets/interviewercandidate.jpg") no-repeat center center
-  fixed;
+#interviewer_candidate {
+  background: url("../assets/interviewercandidate.jpg") no-repeat center center;
+}
+#interview_dash .weekly-bg {
+  background-color: #fafafa;
+  padding: 20px 0;
 }
 
-/* ------------------------------------- candidate--------- --------------------------------- */
+#interview_dash .time-bg {
+  background-color: var(--main-bg-color);
+}
+
+#interview_dash .time-bg .card-body {
+  text-align: center;
+  color: #fff;
+}
+
+/* ------------------------------------- candidate------------------------------------------- */
+
+#candidate_dash .interview-sloat {
+  padding-bottom: 30px;
+}
+#candidate_dash .candidate-button {
+  float: right;
+  padding-top: 10px;
+}
+#candidate_dash .card-header {
+  border-bottom: none !important;
+}
+#candidate_dash .card-body {
+  border: 20px !important;
+}
+
+#candidate_dash .short-candidate {
+  margin-left: 10px;
+}
+
+#candidate_dash .short-candidate h5 {
+  font-weight: 700;
+}
+#candidate_dash .short-candidate p {
+  color: #ccc;
+}
+
+#candidate_dash .comment-box h3 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#candidate_dash .comment-box .form-group textarea {
+  border-color: var(--main-bg-color) !important;
+}
+#candidate_dash .comment-box button {
+  margin-top: 40px;
+  background: var(--main-bg-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+#candidate_dash .schedule-interview {
+  background: #fafafa;
+  padding: 50px 0px;
+}
+
+#candidate_dash .table-bg {
+  background: var(--main-bg-color);
+}
 
 #candidate_salary {
-  background: url("../assets/candidatesalary.jpg") no-repeat center center fixed;
+  background: url("../assets/candidatesalary.jpg") no-repeat center center;
 }
 
 #candidate_acedemic {
-  background: url("../assets/candidate_acedemic.jpg") no-repeat center center
-    fixed;
+  background: url("../assets/candidate_acedemic.jpg") no-repeat center center;
 }
 
 #candidate_profile {
-  background: url("../assets/candidate_profile.jpg") no-repeat center center
-  fixed;
+  background: url("../assets/candidate_profile.jpg") no-repeat center center;
 }
 
 /* --------------------------------------- verification -------------------------------------- */
 
-#verification{
-  background: url("../assets/verification.jpg") no-repeat center center
-  fixed;
+#verification {
+  background: url("../assets/verification.jpg") no-repeat center center;
 }
-#verification button{
-  width: 100% !important;
+
+#verification .bgWhite {
+  background: white;
+  box-shadow: 0px 3px 6px 0px #cacaca;
+}
+
+#verification .title {
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#verification .customBtn {
+  border-radius: 0px;
+  /* padding:10px; */
+}
+
+#verification .userInput {
+  display: flex;
+  justify-content: center;
+}
+
+#verification input {
+  margin: 10px;
+  height: 35px;
+  width: 65px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: arimo;
+  font-size: 1.2rem;
+  background: #eef2f3;
 }

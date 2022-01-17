@@ -31,6 +31,7 @@
   #services .cards {
     padding: 50px 25px;
   }
+
 }
 @media only screen and (min-width: 601px) and (max-width: 990px) {
   #homepage .nav-tabs .nav-link {
@@ -62,6 +63,7 @@
   #services .cards {
     padding: 30px 30px;
   }
+ 
 }
 @media only screen and (min-width: 350px) and (max-width: 600px) {
   #homepage .nav-tabs .nav-link {
@@ -108,6 +110,11 @@
     margin-right: 114px !important;
     margin-top: 44px !important;
   }
+  #candidate_dash .candidate-button, #hr_dash .candidate-button {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 }
 
 @media only screen and (max-width: 320px) {
@@ -131,5 +138,10 @@
     margin-right: 94px !important;
     margin-top: 33px !important;
     width: 24% !important;
+}
+#candidate_dash .candidate-button, #hr_dash .candidate-button {
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 }

@@ -55,7 +55,6 @@ const Hr_Company = () => {
                   <input
                     class="form-control"
                     type="file"
-                    id="verification"
                     multiple
                   />
                 </div>

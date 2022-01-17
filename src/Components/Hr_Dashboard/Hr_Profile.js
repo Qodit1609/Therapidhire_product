@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 
-
 const Hr_Profile = () => {
   return (
     <div id="hr_profile">
+      <Header/>
       <div class="form-bg">
         <div class="container">
           <div class="row">

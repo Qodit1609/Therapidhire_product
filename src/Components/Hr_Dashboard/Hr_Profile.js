@@ -1,10 +1,9 @@
 import React from "react";
-import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 const Hr_Profile = () => {
   return (
     <div id="hr_profile">
-      <Header/>
       <div class="form-bg">
         <div class="container">
           <div class="row">
@@ -96,9 +95,9 @@ const Hr_Profile = () => {
                   />
                 </div>
                 <div className="next-button">
-                  <button type="submit" class="btn btn-default">
-                    Next
-                  </button>
+                <Link to="/hr_company">   <button type="submit" class="btn btn-default">
+                 Next
+                  </button></Link>  
                 </div>
               </form>
             </div>

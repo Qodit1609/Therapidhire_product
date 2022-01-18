@@ -9,50 +9,22 @@ const Log = () => {
   const [email, setEmail] = useState(null);
   const [message, setMessage] = useState(null);
   const [data, setData] = useState({});
-  const API = "https://therapidhiredev.herokuapp.com";
+  const API = "https://trhproduct.herokuapp.com/";
   const [error, setError] = useState(null);
   const [emailError] = useState(null);
   let emailInput = React.createRef();
   let history = useHistory();
-
+  
   const handleChange = (e) => {
-    console.log("handleChange", e);
-    let baseUrl = `${API}/api/auth/login`;
-    let payload = email ;
-
-    let loginApi =  axios
-      .post(baseUrl, payload)
-      .then(({ data }) => {
-        setMessage(data.message);
-        setData(data.data);
-        setError(false);
-        let pathAdmin = `/admin/dashboard`;
-        let pathHR = `/hr`;
-        let pathSales = `/sales`;
-        if (data.roleName == "hr") {
-          history.push(pathHR);
-        } else if (data.roleName == "sales") {
-          history.push(pathSales);
-        } else if (data.roleName == "admin") {
-          history.push(pathAdmin);
-        } else {
-        }
-        localStorage.setItem("myData", data.roleName);
-        window.location.reload();
-      })
-      .catch(function (error) {
-        setError(true);
-        console.log("invalid username or password");
-        return Promise.reject(error);
-      });
+    localStorage.setItem("myData", data.roleName);
+    window.location.reload();
+    
   };
 
   function getOTP() {
-    // console.log("get OTP: ", emailInput.current.value);
     let email = emailInput.current.value;
     if (email === "apoorv@trh.com") {
       console.log("get otp response: ", "email matched successfully!");
-      // return <Redirect to='/verification' />
       history.push("/verification");
     } else {
       console.log("get otp response: ", "invalid email...");

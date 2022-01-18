@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Candidate_Profile = () => {
   return (
@@ -113,9 +114,11 @@ const Candidate_Profile = () => {
                   </select>
                 </div>
                 <div className="next-button">
-                  <button type="submit" class="btn btn-default">
-                    Next
-                  </button>
+                  <Link to="/candidate_acedemic">
+                    <button type="submit" class="btn btn-default">
+                      Next
+                    </button>
+                  </Link>
                 </div>
               </form>
             </div>

@@ -1,14 +1,14 @@
 import React from "react";
-import Footer from "../Footer/Footer";
-import coomentbox from "../../Assets/Contact_Animations.png";
-import shortlisted from "../../Assets/shortlisted.png";
-import Admin_Header from "../Header/Admin_Header";
-import interviwer from "../../Assets/18940.png";
+import Footer from "./Footer/Footer";
+import coomentbox from "../Assets/Contact_Animations.png";
+import shortlisted from "../Assets/shortlisted.png";
+import interviwer from "../Assets/18940.png";
 import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import Admin_Header from "./Header/Admin_Header";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
-const Hr_Dashboard = () => {
+const Dashboard = () => {
   const data = {
     labels: ["Today", "This Week", "Month", "Custom"],
     datasets: [
@@ -31,17 +31,15 @@ const Hr_Dashboard = () => {
       },
     ],
   };
-  // const [userType, setUserType] = useState('')
-
-  // setUserType(localStorage.getItem('user_type'))
+ 
   const userType = localStorage.getItem("user_type");
   console.log(userType);
   return (
     <div>
+      <Admin_Header/>
       {userType && userType == "HR" ? 
       (
         <div id="hr_dash">
-          <Admin_Header />
           <section className="pb-5">
             <div className="container">
               <div class="row">
@@ -349,7 +347,7 @@ const Hr_Dashboard = () => {
                             src={shortlisted}
                             class="rounded-circle"
                             width="35"
-                          />
+                          /> 
                           <div class="ms-2">
                             <h5 class="font-weight-medium mb-0">
                               Brad Simmons
@@ -828,4 +826,4 @@ const Hr_Dashboard = () => {
   );
 };
 
-export default Hr_Dashboard;
+export default Dashboard;

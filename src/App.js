@@ -7,7 +7,6 @@ import Signup from "./Components/Signup/Signup";
 import Hr_Profile from "./Components/Hr_Dashboard/Hr_Profile";
 import Interviewer_Profile from "./Components/Interviewer_Dashboard/Interviewer_Profile";
 import Hr_Requirments from "./Components/Hr_Dashboard/Hr_Requirments";
-import Hr_Dashboard from "./Components/Hr_Dashboard/Hr_Dashboard";
 import Hr_Company from "./Components/Hr_Dashboard/Hr_Company";
 import Candiadate_Salary from "./Components/Candidate/Candiadate_Salary";
 import Candidate_Acedemic from "./Components/Candidate/Candidate _Acedemic";
@@ -17,6 +16,7 @@ import Interviewer_Candidate from "./Components/Interviewer_Dashboard/Interviewe
 import Verification from "./Components/Verification";
 import Interview_Dashboard from "./Components/Interviewer_Dashboard/Interview_Dashboard";
 import Footer from "./Components/Footer/Footer";
+import Dashboard from "./Components/Dashboard";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/login" component={Log}></Route>
         <Route exact path="/signup" component={Signup}></Route>
         <Route exact path="/hr_profile" component={Hr_Profile}></Route>
-        <Route exact path="/hr_dashboard" component={Hr_Dashboard}></Route>
+        <Route exact path="/dashboard" component={Dashboard}></Route>
         <Route exact path="/hr_requirment" component={Hr_Requirments}></Route>
         <Route exact path="/hr_company" component={Hr_Company}></Route>
         <Route exact path="/interviewer_profile" component={Interviewer_Profile}></Route>

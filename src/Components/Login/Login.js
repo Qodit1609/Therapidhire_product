@@ -8,7 +8,6 @@ function Login() {
   const [email, setEmail] = useState(null);
 
   let history = useHistory();
-  // const [userType, setUserType] = useState('');
 
   const submitSignup = (e) => {
     e.preventDefault();
@@ -17,7 +16,6 @@ function Login() {
   };
 
   const setEmail1 = (e) => {
-    // console.log(e.target.value)
     setUsername(e.target.value);
   };
 
@@ -27,13 +25,13 @@ function Login() {
     let email = e.target[0].value;
     if (email === "apoorv@trh.com") {
       localStorage.setItem("user_type", "HR");
-      history.push("/hr_dashboard");
+      history.push("/dashboard");
     } else if (email === "apoorv@trh1.com") {
       localStorage.setItem("user_type", "candidate");
-      history.push("/hr_dashboard");
+      history.push("/dashboard");
     } else if (email === "apoorv@trh2.com") {
       localStorage.setItem("user_type", "interviewer");
-      history.push("/hr_dashboard");
+      history.push("/dashboard");
     }
     else{
       console.log("noting")

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hr_Requirments = () => {
   return (
@@ -9,7 +10,7 @@ const Hr_Requirments = () => {
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <form class="form-horizontal row">
-                <div class="form-group col-md-12">
+                {/* <div class="form-group col-md-12">
                   <div class="profile-img">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
@@ -20,7 +21,7 @@ const Hr_Requirments = () => {
                       <input type="file" name="file" />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div class="form-group col-md-12">
                   <label>Intrested field</label>
                   <input
@@ -64,9 +65,9 @@ const Hr_Requirments = () => {
                   ></textarea>
                 </div>
                 <div className="next-button">
-                  <button type="submit" class="btn btn-default">
-                    Next
-                  </button>
+                 <Link to="/dashboard"> <button type="submit" class="btn btn-default">
+                    Submit
+                  </button></Link>
                 </div>
               </form>
             </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Candiadate_Salary = () => {
   return (
@@ -9,7 +10,7 @@ const Candiadate_Salary = () => {
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <form class="form-horizontal row">
-                <div class="form-group col-md-12">
+                {/* <div class="form-group col-md-12">
                   <div class="profile-img">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog"
@@ -20,7 +21,7 @@ const Candiadate_Salary = () => {
                       <input type="file" name="file" />
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div class="form-group col-md-12">
                   <label for="gender">
                     Current CTC (in case of experience)
@@ -52,9 +53,9 @@ const Candiadate_Salary = () => {
                   ></textarea>
                 </div>
                 <div className="next-button">
-                  <button type="submit" class="btn btn-default">
+                 <Link to="/dashboard"> <button type="submit" class="btn btn-default">
                     Submit
-                  </button>
+                  </button></Link> 
                 </div>
               </form>
             </div>

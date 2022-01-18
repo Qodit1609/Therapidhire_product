@@ -7,7 +7,7 @@ import shortlisted from "../../Assets/shortlisted.png";
 const Candidate_Dashboard = () => {
   return (
     <div id="candidate_dash">
-      <Header />
+        {/* <Admin_Header /> */}
       <section class="interview-sloat">
         <div className="container">
           <div class="row">

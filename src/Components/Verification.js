@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const Verification = () => {
+  const [value, setValue] = useState([]);
+  const [email, setEmail] = useState([]);
   const [otp, setOtp] = useState(new Array(4).fill(""));
   const handleChange = (element, index) => {
     if (isNaN(element.value)) return false;
@@ -9,6 +11,7 @@ const Verification = () => {
       element.nextSibling.focus();
     }
   };
+
   const json = JSON.stringify(otp);
 
   const verify = () => {

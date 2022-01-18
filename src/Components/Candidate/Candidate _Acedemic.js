@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Candidate_Acedemic = () => {
   return (
@@ -9,9 +10,9 @@ const Candidate_Acedemic = () => {
             <div class="col-md-3"></div>
             <div class="col-md-6">
               <form class="form-horizontal row">
-              <div class="mb-3">
+                <div class="mb-3">
                   <label for="upload_file" class="form-label">
-                  CV/Resume
+                    CV/Resume
                   </label>
                   <input
                     class="form-control"
@@ -22,7 +23,7 @@ const Candidate_Acedemic = () => {
                 </div>
                 <div class="mb-3">
                   <label for="upload_file" class="form-label">
-                  10th Marksheet
+                    10th Marksheet
                   </label>
                   <input
                     class="form-control"
@@ -33,7 +34,7 @@ const Candidate_Acedemic = () => {
                 </div>
                 <div class="mb-3">
                   <label for="upload_file" class="form-label">
-                  12th Marksheet
+                    12th Marksheet
                   </label>
                   <input
                     class="form-control"
@@ -44,7 +45,7 @@ const Candidate_Acedemic = () => {
                 </div>
                 <div class="mb-3">
                   <label for="upload_file" class="form-label">
-                  Graducation Marksheet
+                    Graducation Marksheet
                   </label>
                   <input
                     class="form-control"
@@ -55,7 +56,7 @@ const Candidate_Acedemic = () => {
                 </div>
                 <div class="mb-3">
                   <label for="upload_file" class="form-label">
-                  PG Marksheet
+                    PG Marksheet
                   </label>
                   <input
                     class="form-control"
@@ -66,7 +67,7 @@ const Candidate_Acedemic = () => {
                 </div>
                 <div class="mb-3">
                   <label for="upload_file" class="form-label">
-                  Any Certification
+                    Any Certification
                   </label>
                   <input
                     class="form-control"
@@ -76,9 +77,7 @@ const Candidate_Acedemic = () => {
                   />
                 </div>
                 <div class="form-group col-md-12">
-                  <label for="gender">
-                  Intrested Job Field
-                  </label>
+                  <label for="gender">Intrested Job Field</label>
                   <select class="form-control" id="ctc">
                     <option>select</option>
                     <option>IT</option>
@@ -87,9 +86,11 @@ const Candidate_Acedemic = () => {
                   </select>
                 </div>
                 <div className="next-button">
-                  <button type="submit" class="btn btn-default">
-                    Next
-                  </button>
+                  <Link to="/candidate_salary">
+                    <button type="submit" class="btn btn-default">
+                      Next
+                    </button>
+                  </Link>
                 </div>
               </form>
             </div>

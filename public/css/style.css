@@ -479,22 +479,24 @@ p {
 #candidate_profile,
 #interviewer_candidate,
 #verification {
-  /* padding: 50px 0px; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-  overflow:hidden;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #hr_req {
   background: url("../assets/hrrequirement.jpg") no-repeat center center;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 #hr_company {
   background: url("../assets/hrcompany.jpg") no-repeat center center;
+  height: 100vh;
 }
 
 #hr_profile {
@@ -647,6 +649,8 @@ p {
 
 #interviewer_candidate {
   background: url("../assets/interviewercandidate.jpg") no-repeat center center;
+  height: 100vh;
+  padding-top: 80px;
 }
 #interview_dash .weekly-bg {
   background-color: #fafafa;
@@ -716,6 +720,8 @@ p {
 
 #candidate_salary {
   background: url("../assets/candidatesalary.jpg") no-repeat center center;
+  height: 100vh;
+  padding-top: 50px;
 }
 
 #candidate_acedemic {
@@ -730,6 +736,8 @@ p {
 
 #verification {
   background: url("../assets/verification.jpg") no-repeat center center;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 #verification .bgWhite {

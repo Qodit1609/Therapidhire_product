@@ -32,7 +32,7 @@ const Header = () => {
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item p-3">
-                <NavLink exact activeClassName="active" to="#">
+                <NavLink exact activeClassName="active" to="/">
                   Home
                 </NavLink>
               </li>
@@ -48,7 +48,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li class="nav-item">
-                <a class="nav-link p-3" href="#">
+                <a class="nav-link p-3" href="/signup">
                   <button type="button" class="btn">
                     Sign Up
                   </button>

@@ -6,12 +6,7 @@ import axios from "axios";
 
 const Log = () => {
   const [username, setUsername] = useState("apoorv@trh.com");
-  const [email, setEmail] = useState(null);
-  const [message, setMessage] = useState(null);
   const [data, setData] = useState({});
-  const API = "https://trhproduct.herokuapp.com/";
-  const [error, setError] = useState(null);
-  const [emailError] = useState(null);
   let emailInput = React.createRef();
   let history = useHistory();
   
